@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test1', function() {
+    parenthesis('a (b c (d e (f) g) h) i (j k)', 2);
+});
